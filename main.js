@@ -6,6 +6,7 @@ const coupons =document.querySelector('.coupons');
 const btnadd =document.querySelector('.btnadd');
 const Discountapply =document.querySelector('.Discountapply');
 const displayprice =document.querySelector('.displayprice');
+const btncheckout = document.querySelector(".btn-checkout")
 let count = 0
 shownumber.innerHTML = count
 price.innerHTML = count
@@ -48,6 +49,14 @@ function applycoupons(e){
         console.error("Invalid price format after cleaning:", data);
        }
     }
+
 }
+btncheckout.addEventListener("click",()=>{
+    if(count > 0){
+        alert(" product is successfuly")
+    }else{
+        alert("fill a product")
+    }
+})
 
 
